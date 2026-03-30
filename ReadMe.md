@@ -1,4 +1,4 @@
-# Welcome to A-frame Sandbox
+# Welcome to the A-frame Starter Pack
 
 Below you’ll find instructions to copy (fork) this repository and set it up for your own experiments.
 
@@ -8,7 +8,7 @@ Below you’ll find instructions to copy (fork) this repository and set it up fo
 ##
 
 
-## STEP 01 - Setup (Your Code and Live Site)
+## STEP 01 - Setup Your Code and Live Site (Github and Github Pages)
 
 1. **Create a GitHub account** if you do not already have one.
 2. Go to the [Example Code Repo](https://github.com/sheiva/aframe-example-code): https://github.com/sheiva/aframe-example-code
