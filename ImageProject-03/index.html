@@ -5,11 +5,32 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Preload assets to ensure textures are available -->
+      <a-assets>
+        <a-asset-item id="horse" src="assets/CreativeTools.se - Blue Cow-horse - OBJ - Mid res.obj"></a-asset-item>
+        <a-asset-item id="shroom" src="assets/shroom126kUV_obj.obj"></a-asset-item>
+        <a-asset-item id="Fark" src="assets/Fark-LargerFin_r2.obj"></a-asset-item>
+
+        <img id="plane" src="assets/sky1.jpg">
+        <!-- <img id="tex1" src="assets/texture1.jpg">
+        <img id="tex2" src="assets/texture2.jpg">
+        <img id="tex4" src="assets/texture4.jpg"> -->
+        <img id="sky1" src="assets/sky-sea-march-19-2024.png">
+      </a-assets>
+
+
+      <a-obj-model src="#horse" position="-9. 0 -10" scale=".1 .1 .1" color="Pink"></a-obj-model>
+      <a-obj-model src="#shroom" position="2 0.5 -4" scale=".3 .3 .3" color="Purple"></a-obj-model>
+      <a-obj-model src="#Fark" radius="0.5" position="0 0.5 -3"scale=".01 .01 .01" color="Blue"></a-obj-model>
+
+
+      <a-sky src="#sky1" radius="30"></a-sky>
+
+      <a-plane src="#plane" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+      <a-light type="ambient" color="#666"></a-light>
+      <a-light type="point" intensity="1" position="2 4 4"></a-light>
     </a-scene>
   </body>
 </html>
